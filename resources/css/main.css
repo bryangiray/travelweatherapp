@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(0,0,0,0.2);
+}
+#app:before {
+    background: url('../assets/fuji.png');
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+h1.welcome-msg {
+    color: #fff;
+}
+.sunicon { 
+    max-width: 50px;
+}
+
+.searchForm { max-width: 384px;}
+
+html { 
+    scroll-behavior : smooth;
+}
+@media( max-width: 800px ){
+    #recommendations { margin-top: 110px }
+}
